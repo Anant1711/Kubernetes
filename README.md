@@ -1,5 +1,10 @@
 ﻿# Task-3 Kubernetes
 
+## Introduction
+
+This repository contains a sample Spring Boot application that uses MongoDB as its database, along with YAML files to deploy the application in a local Minikube cluster.
+
+This repository includes all the necessary files to deploy the application on Minikube. The deployment is composed of several YAML files that create a MongoDB deployment, a service for the MongoDB database, a deployment for the Spring Boot application, and a service to expose the application.
 ## Prerequisites
 
 - Docker
@@ -10,8 +15,10 @@
 ```
 git clone https://github.com/Anant1711/Task-3-Kubernetes..git
 ```
-
-> cd Task-3-Kubernetes
+ 
+```gitignore
+cd Task-3-Kubernetes
+```
 
 2. Build the Docker image and upload it to Docker Hub:
 
