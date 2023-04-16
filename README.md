@@ -41,7 +41,7 @@ kubectl apply -f mongo-secret.yml
 kubectl apply -f mongo-deployment.yml
 kubectl apply -f deployment.yml
 ```
-> NOTE: Follow the same order tu run the command
+> NOTE: Follow the same order to run the command
 
 5. Verify that the pods are running:
 ```gitignore
