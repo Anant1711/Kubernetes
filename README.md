@@ -24,7 +24,7 @@ cd Task-3-Kubernetes
 
 ```
 mvn install
-docker build -t <your-username>/<your-project> .
+docker build -t <your-username-of-dockerhub>/<your-repo-name-of-dockerhub> .
 docker push <your-username>/<your-project>
 ```
 3. Start Minikube:
@@ -183,7 +183,7 @@ spec:
     spec:
       containers:
         - name: spring-mongo-service
-          image: anantchauhan/kaiburr-task-5:1.1
+          image: <username_of_dockerhub>/<repo_name_of_dockerhub>
           #imagePullPolicy: Never
           ports:
             - containerPort: 8080
