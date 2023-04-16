@@ -1,0 +1,15 @@
+version: "5"
+services:
+  mongo-container:
+    image: mongo:latest
+    container_name: "mongo-container"
+    ports:
+      - 27017:27017
+
+  spring-container:
+    image: springdockerimage:latest
+    container_name: "spring-container"
+    ports:
+      - 8080:8080
+    links:
+      - mongo-container

@@ -1,0 +1,46 @@
+#####################################################
+#spring:
+#  data:
+#    mongodb:
+#      database: serverDetailsAPI
+#      host: mongo-container
+#      port: 27017
+########################################################
+###############################################3
+
+spring:
+  application:
+    name: spring-mongo-service
+  data:
+    mongodb:
+      host: '${MONGO_HOST}'
+      database: '${MONGO_DB}'
+      port: 27017
+      username: '${MONGO_USERNAME}'
+      password: '${MONGO_PASSWORD}'
+
+  # For kuber.
+  cloud:
+    kubernetes:
+      discovery:
+        register: true
+      secrets:
+        name: mongo-secret  #for mongo crediantials
+
+      config:
+        enabled: true
+        sources:
+          - namespace: default
+            name: mongo-conf  #for mongo configuration file
+      reload:
+        enabled: true
+        mode: polling
+        period: 1000
+management:
+  endpoint:
+    restart:
+      enabled: true
+    health:
+      enabled: true
+    info:
+      enabled: true

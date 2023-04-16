@@ -1,0 +1,4 @@
+com\example\task5\Task5Application.class
+com\example\task5\model\Server.class
+com\example\task5\controller\ServerController.class
+com\example\task5\Repository\serverRepo.class
