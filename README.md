@@ -13,7 +13,7 @@ This repository includes all the necessary files to deploy the application on Mi
 ## Getting Started
 1. Clone repository:
 ```
-git clone https://github.com/Anant1711/Task-3-Kubernetes..git
+git clone https://github.com/Anant1711/Task-3-Kubernetes.git
 ```
  
 ```gitignore
