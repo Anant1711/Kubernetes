@@ -1,4 +1,4 @@
-﻿# Task-3 Kubernetes
+﻿# Kubernetes
 
 ## Introduction
 
